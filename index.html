@@ -341,7 +341,7 @@ const createMap = (type = 'confirmed') => {
             countryChart.update({
             	series,
                 tooltip: {
-                    pointFormat: '<b>Day {point.x}: {point.date:%b %e, %Y}</b><br>{point.y} ' + config.valueSuffix
+                    pointFormat: '<b>Day {point.x}: {point.date:%e/%m/%Y}</b><br>{point.y} ' + config.valueSuffix
                 }
             }, true, true);
             location.hash = store.join(',');
